@@ -8,11 +8,12 @@ let array =[]
 localStorage.setItem('MyArray', JSON.stringify(array));
 
 const pool = new Pool({
-    host:     process.env.POSTGRESQL_ADDON_HOST,
-    user:     process.env.POSTGRESQL_ADDON_USER,
-    password: process.env.POSTGRESQL_ADDON_PASSWORD,
-    database: process.env.POSTGRESQL_ADDON_DB,
-    port:     process.env.POSTGRESQL_ADDON_PORT,
+    host:'localhost',
+    user:'postgres',
+    password:'654321',
+    database: 'marketplace',
+    allowExitOnIdle: true
+    
 })
 // sesscion consultas usuarios
 const login = async(email,password)=>{

@@ -1,0 +1,3 @@
+# Ignorar archivos conexion
+node_modules/
+.env

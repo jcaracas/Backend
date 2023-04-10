@@ -7,7 +7,7 @@ const { reporteConsultas} = require("./middlewares/miders")
 
 const port = process.env.PORT || 3000;
 
-const params =  "Za_Za"
+const params =  process.env.PARAMS
 
 app.listen(port,()=>console.log("Servidor Activo Puerto 3000"));
 
